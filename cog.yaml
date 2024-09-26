@@ -14,3 +14,4 @@ build:
     - curl -fsSL https://ollama.com/install.sh | OLLAMA_VERSION=0.3.11 sh
 
 predict: "predict.py:Predictor"
+image: "r8.im/justmalhar/meta-llama-3.2-1b"
