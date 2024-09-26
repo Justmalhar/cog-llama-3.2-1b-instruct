@@ -5,12 +5,12 @@ on:
   # Go to your repo, click "Actions", click "Push to Replicate", click "Run workflow"
   workflow_dispatch:
     inputs:
-      model_name:
+      model_name:justmalhar/meta-llama-3.2-1b-instruct
         description: 'Enter the model name, like "alice/bunny-detector". If unset, this will default to the value of `image` in cog.yaml.'
   # # Uncomment these lines to trigger the workflow on every push to the main branch
-  # push:
-  #   branches:
-  #     - main
+  push:
+    branches:
+      - main
 
 jobs:
   push_to_replicate:
